@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@keyframes用法实例</title>
+  <style>
+    .container {
+      width: 50vw;
+      height: 90vh;
+      display: flex;
+    }
+    .wordOne {
+      color: #a9a0f7;
+      font-size: 40px;
+      width: 120px;
+      animation-name: leftToRight;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    .wordTwo {
+      color: #8aa4cb;
+      font-size: 40px;
+      flex: 1;
+      animation-name: rightToLeft;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    /* 设置@keyframes规则 */
+    @keyframes rightToLeft {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    /* 兼容老版本浏览器 */
+    @-webkit-keyframes rightToLeft {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    @keyframes leftToRight {
+      0% {
+        margin-left: 10%;
+        width: 100%;
+      }
+      20% {
+        margin-left: 20%;
+        width: 100%;
+      }
+      100% {
+        margin-left: 90%;
+        width: 300%;
+      }
+    }
+    @-webkit-keyframes leftToRight {
+      0% {
+        margin-left: 10%;
+        width: 100%;
+      }
+      20% {
+        margin-left: 20%;
+        width: 100%;
+      }
+      100% {
+        margin-left: 90%;
+        width: 300%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wordOne">Hello</div>
+    <div class="wordTwo">World</div>
+  </div>
+</body>
+</html>
