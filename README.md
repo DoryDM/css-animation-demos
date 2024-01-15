@@ -1,13 +1,15 @@
 # demo lists
 Open the index.html file in the root directory of the project in the browser to see the list of demos, have fun.
 ## animation
-run animation/demo.html
-# @keyframes
-run @keyframes/keyframes.html
-
+open animation/rotateElement.html
+open animation/changeOpacity.html
+# keyframes
+open @keyframes/index.html
 ## transition
-run transition/demo.htmls
-
+open transition/demo.html
 ## transform
-run transform/demo.html
+open transform/index.html
+open transform/combinationalDemo.html
+## translate
+open translate/index.html
 
