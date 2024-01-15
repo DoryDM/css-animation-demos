@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #animatedObject {
+      width: 100px;
+      height: 100px;
+      margin: 100px;
+      background-color: #27ae60;
+      position: relative;
+      animation: complexTransformAnimation 4s ease-in-out infinite;
+    }
+
+    @keyframes complexTransformAnimation {
+      0%, 100% {
+        transform: rotate(0deg) scale(1);
+      }
+      25% {
+        transform: rotate(90deg) scale(1.5);
+      }
+      50% {
+        transform: rotate(180deg) scale(1);
+      }
+      75% {
+        transform: rotate(270deg) scale(0.5);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="animatedObject"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #animatedObject {
+      width: 100px;
+      height: 100px;
+      margin: 200px;
+      background-color: #3498db;
+      position: relative;
+      animation: complexTransformAnimation 4s ease-in-out infinite;
+    }
+
+    @keyframes complexTransformAnimation {
+      0% {
+        transform: translate(0, 0) rotate(0deg) scale(1) skew(0deg, 0deg);
+      }
+      25% {
+        transform: translate(50px, -50px) rotate(90deg) scale(1.5) skew(0deg, 0deg);
+      }
+      50% {
+        transform: translate(100px, 0) rotate(180deg) scale(1) skew(30deg, 30deg);
+      }
+      75% {
+        transform: translate(0, 50px) rotate(270deg) scale(0.5) skew(-30deg, -30deg);
+      }
+      100% {
+        transform: translate(-50px, 0) rotate(360deg) scale(1) skew(0deg, 0deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="animatedObject"></div>
+</body>
+</html>
